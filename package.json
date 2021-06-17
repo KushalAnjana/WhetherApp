@@ -1,0 +1,14 @@
+{
+  "name": "whetherappnodejs",
+  "version": "1.0.0",
+  "description": "Whether Details",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kushal",
+  "license": "ISC",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}

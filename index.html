@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    
+</head>
+<style>
+    *{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+  transition:.5s;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(https://free4kwallpapers.com/uploads/originals/2015/07/28/sun-shining-through-clouds.jpg);
+	background-position: center center;
+	background-size: cover;
+
+}
+
+.mid{
+	width: 500px;
+	height: 500px;
+	background-color:rgba(0, 0, 0, .5);
+	border-radius: 50%;
+}
+
+.corner_text{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  
+}
+
+.corner_text p{
+	position: absolute;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.corner_text p:nth-child(1){
+	top: 10px;
+	left: 50%;
+	
+}
+
+.corner_text p:nth-child(2){
+	top:50%;
+	left:10px;
+	
+}
+
+.corner_text p:nth-child(3){
+	bottom: 10px;
+	left: 50%;
+}
+
+.corner_text p:nth-child(4){
+	top: 50%;
+	right: 10px;
+}
+.corner_text p:nth-child(5){
+	top:7%;
+	left: 51%;
+	
+}
+
+.corner_text p:nth-child(6){
+	top:50%;
+	left:10%;
+	transform: rotate(90deg);
+	
+}
+
+.corner_text p:nth-child(7){
+	bottom: 8%;
+	left: 51%;
+
+}
+
+.corner_text p:nth-child(8){
+	top: 50%;
+	right:9%;
+	transform: rotate(90deg);
+
+}
+.corner_text:after{
+      content: '';
+      width: 80%;
+      height: 80%;
+      position: absolute;
+       left: 0;
+       top: 0;
+       bottom:0;
+       right: 0;
+       margin: auto;
+      border: 1px solid #fff;
+       border-radius: 50%;
+}
+
+.data{
+	width: 350px;
+	height: 350px;
+	
+	border-radius: 50%;
+	position: absolute;
+	display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+}
+
+.cel h1{
+	text-align:center;
+	font-size:40px;
+	font-weight:initial;
+	letter-spacing: 5px;
+	color: #fff;
+}
+.cel p{
+	text-align:center;
+	font-size:20px;
+	color: #fff;
+}
+
+
+.cel span{
+	font-size: 25px;
+}
+
+.date{
+	margin-bottom: 5px;
+}
+
+ sub{
+	font-size:12px;
+}
+
+.max_min{
+  display: flex;
+
+}
+.max_min hr{
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.max{
+	flex: 1;
+	margin-top:10px;
+}
+
+.max p{
+	text-align: center;
+	color: #fff;
+}
+
+.max span{
+	font-size: 25px;
+}
+
+.cloud{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 2;
+}
+
+
+.cloud img{
+	width:100px;
+	height: 100px;
+	margin-top:0px;
+}
+
+h1{
+    color: aliceblue;
+}
+
+
+.min{
+	flex: 1;
+	margin-top:10px;
+}
+
+.min p{
+	text-align: center;
+	color: #fff;
+}
+
+.min span{
+	font-size: 25px;
+}
+
+.bottom{
+	text-align: center;
+}
+
+
+
+.bottom p{
+   font-size:18px;
+	color: #fff;
+}
+
+@media screen and (max-width: 510px) {
+  .mid{
+  	width: 300px;
+  	height: 300px;
+  }
+
+  .data{
+  	width: 210px;
+  	height: 210px;
+  }
+
+  .corner_text p{
+  	font-size: 16px;
+  }
+ 
+
+   .cel h1{
+         font-size: 20px;
+   }
+
+   .cel span{
+        font-size: 20px;
+   }
+
+   .cal p{
+       width: 18px;
+   }
+
+   .date{
+   	margin-bottom: 0px;
+   }
+
+   .data p{
+   	font-size: 14px;
+   }
+
+
+   .cloud img{
+   	height: 70px;
+   	width: 80px;
+   }
+
+   .max p{
+       font-size: 12px;
+   }
+
+   .max span{
+   	font-size: 16px;
+   }
+
+    .max_min hr{
+      margin-top: 5px;
+      margin-bottom: 05px;
+    }
+
+
+     .min p{
+       font-size: 12px;
+   }
+
+   .min span{
+   	font-size: 16px;
+   }
+
+   .bottom p{
+       font-size: 10px;
+   }
+
+
+   .corner_text p:nth-child(1){
+	top: 2px;
+	left: 50%;
+	
+}
+
+.corner_text p:nth-child(2){
+	top:49%;
+	left:2px;
+	
+}
+
+.corner_text p:nth-child(3){
+	bottom: 2px;
+	left: 50%;
+}
+
+.corner_text p:nth-child(4){
+	top: 49%;
+	right: 2px;
+}
+
+.max{
+	margin-top:12px;
+}
+
+.min{
+	margin-top:12px;
+}
+
+
+.corner_text p:nth-child(5){
+	top:7%;
+	left: 51%;
+	font-size: 10px;
+	
+}
+
+.corner_text p:nth-child(6){
+	top:50%;
+	left:10%;
+	transform: rotate(90deg);
+	font-size: 10px;
+	
+}
+
+.corner_text p:nth-child(7){
+	bottom: 8%;
+	left: 51%;
+  font-size: 10px;
+}
+
+.corner_text p:nth-child(8){
+	top: 50%;
+	right:9%;
+	transform: rotate(90deg);
+	font-size: 10px;
+}
+
+}
+</style>
+<body>
+
+    <body>
+        <div class="container">
+             <div class="mid">
+                 <div class="corner_text">
+                    
+                 </div>
+                 </div>
+                 <div class="data">
+                     <div class="cel">
+                         
+                        <br>
+                         <h1>{%location%},{%country%}</h1>
+                         <br>
+                         
+                         <p>Temperature <span> {%tempval%}&deg;C</span></p>
+                     </div>
+                     <div class="max_min">
+                         <div class="max">
+                             <p>Max <span>{%tempmax%}&deg;C</span> </p>
+                             <hr>
+                             <p>Humidity <span>{%temphum%}</span></p>
+                         </div>
+                         <div class="cloud" id="whether">
+                             <img src="https://image.flaticon.com/icons/png/512/3026/3026455.png" alt="">
+                         </div>
+                         <div class="min">
+                             <p>Min <span> {%tempmin%}&deg;C</span> </p>
+                             <hr>
+                             <p>Pressur <span>{%temppres%} </span></p>
+                         </div>
+                     </div>
+    
+                     <div class="bottom">
+                        <h1 id="day" ></h1>
+                        <p class="date" id="date"></p>
+                        
+                  
+                     </div>
+             </div>
+        </div>
+
+        <script>
+               const day = document.getElementById('day')
+               const date = document.getElementById('date');
+               var whethericon = document.getElementById('whether');
+
+               const tempStaus = "{%tempStatus%}";
+
+               if(tempStaus == "Sunny"){
+                   whethericon.innerHTML ="  <img src='https://www.pinclipart.com/picdir/big/135-1354609_clip-art-free-nature-transparent-icon-sunny-cloud.png' alt=''>";
+               }
+               else if (tempStaus == "Clouds"){
+                whethericon.innerHTML ="  <img src='https://image.flaticon.com/icons/png/512/3026/3026455.png' alt=''>";
+               }
+
+               else if (tempStaus == "Rainy"){
+                whethericon.innerHTML ="  <img src='https://o.remove.bg/downloads/26bcbe30-4c8e-46f6-a075-2b4c570c99e9/cloud-rain-icon-2-removebg-preview.png' alt=''>";
+               }
+
+
+               else  {
+                whethericon.innerHTML ="  <img src='https://image.flaticon.com/icons/png/512/3026/3026455.png' alt=''>";
+               }
+
+
+               const getCurrentDay = () =>{
+                var weekday = new Array(7);
+                   weekday[0] = "Sunday";
+                   weekday[1] = "Monday";
+                   weekday[2] = "Tuesday";
+                   weekday[3] = "Wednesday";
+                   weekday[4] = "Thursday";
+                   weekday[5] = "Friday";
+                   weekday[6] = "Saturday";
+                let currentTime = new Date();
+                let day = weekday[currentTime.getDay()];
+                return day;
+               };
+            
+
+               const getCurrentTime = () =>
+               {
+                   var months = [
+                       "Jan", "Feb", "Mar","Apr","May" ,"Jun" ,"Jul" ,"Aug" ,"Sep","Oct","Nov","Dec",
+                   ]
+                   var now = new Date();
+                   var month =months[ now.getMonth() +1];
+                   var date = now.getDate();
+
+                   let hours =now.getHours();
+                   let mins = now.getMinutes();
+
+                   let period ="AM";
+                   if(hours>11){
+                       period ="PM";
+                       if(hours>12)
+                       hours-=12;
+                   }
+                   if(mins <10){
+                       mins = "0" +mins;                    
+                   }
+                   
+
+
+                   return `${month} ${date} | ${hours}:${mins} ${period}`
+               };
+
+                day.innerHTML = getCurrentDay();
+               date.innerHTML = getCurrentTime();
+          
+
+
+
+        </script>
+        
+    </body>
+</body>
+</html>
